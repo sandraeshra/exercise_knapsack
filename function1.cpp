@@ -11,7 +11,7 @@ int knapsack(int W, int wt[], int val[], int n)
 	//then this item cannot be included in the optimal solution
 
 	if(wt[n-1] > W)
-		return knapsack(W, wt, val, n-1)
+		return knapsack(W, wt, val, n-1);
 	//Return the maximum of two classes:
 	//(1) nth term item included
 	//(2) not included
